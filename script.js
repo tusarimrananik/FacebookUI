@@ -21,3 +21,25 @@ function displayCurrentTime() {
 // Update time immediately and then every minute
 displayCurrentTime();
 setInterval(displayCurrentTime, 60000); // update every 60 seconds
+
+
+
+
+
+// document.querySelectorAll('.intro img').forEach(img => {
+//     const parentDiv = img.closest('div'); // Select the immediate parent div of the img
+//     if (parentDiv) {
+//         parentDiv.style.position = 'relative';
+
+//         const overlay = document.createElement('div');
+//         overlay.style.position = 'absolute';
+//         overlay.style.top = '0';
+//         overlay.style.left = '0';
+//         overlay.style.width = '100%';
+//         overlay.style.height = '100%';
+//         overlay.style.backgroundColor = 'rgba(128, 128, 128, 0.5)'; // Gray with 50% opacity
+//         overlay.style.pointerEvents = 'none';
+
+//         parentDiv.appendChild(overlay); // Append the overlay to the parent div
+//     }
+// });

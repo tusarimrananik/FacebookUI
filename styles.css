@@ -14,6 +14,7 @@ body {
 
 
 
+
 .rootBody {
     width: 400px;
     max-height: 800px;
@@ -684,4 +685,22 @@ body {
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 12px;
+}
+
+
+
+.intro>div {
+    display: flex;
+    gap: 12px;
+}
+
+
+.intro>div img {
+    filter: invert(33%) sepia(11%) saturate(350%) hue-rotate(180deg);
+}
+
+.intro a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
 }
