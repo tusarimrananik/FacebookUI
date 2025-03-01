@@ -24,6 +24,67 @@ body {
     overflow: hidden;
 }
 
+
+.friendsListGrid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.friendsListGrid>div {
+    max-width: 100%;
+    min-width: 0;
+    /* Prevents grid items from expanding */
+    overflow: hidden;
+    /* Prevents content from spilling out */
+}
+
+
+.seeAllFriendsText {
+
+    color: #65676B;
+
+    margin: 3px 0px 6px 0px;
+}
+
+
+
+.friendsListGrid>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+
+.friendsListGrid>div {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+
+.friendsListGrid>div>div>span>span>div>a {
+    text-decoration: none !important;
+    color: black;
+    font-weight: 450;
+    max-width: 100px !important;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
 .mobileFooter {
     background-color: black;
     height: 40px;
@@ -37,6 +98,11 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
+
+
+
+    /* CHANGE HERE TO DISPLAY BLOCK */
+    /* display: none; */
 }
 
 .addStory {
